@@ -36,8 +36,14 @@ h1  {
 }
 
 h2  {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 900;
+}
+
+@media (min-width: 359px) {
+    h2 {
+        font-size: 24px;
+    }
 }
 
 h3  {
@@ -333,4 +339,77 @@ h1, h2, h3, p, .p-medium, .p-small {
     color: #fff;
     text-align: center;
     text-transform: uppercase;
+}
+
+/* registration block */
+.registration-block {
+    background-color: var(--dark-gray);
+    padding: 64px 0;
+}
+
+.registration-block h2 {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.registration-block-form {
+    margin-top: 24px;
+}
+
+.registration-block-form input {
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid var(--orange);
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.registration-block-form input::placeholder {
+    color: rgba(217, 187, 145, .5);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    opacity: .5;
+}
+
+.registration-block-form input:-ms-input-placeholder {
+    color: rgba(217, 187, 145, .5);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    opacity: .5;
+}
+
+.registration-block-form input::-ms-input-placeholder {
+    color: rgba(217, 187, 145, .5);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    opacity: .8;
+}
+
+.registration-block-form input:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+
+.registration-block-form__button {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 16px;
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--orange);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    font-size: 14px;
+}
+
+.registration-block-form__button:active {
+    opacity: .7;
 }
