@@ -175,6 +175,10 @@ h1, h2, h3, p, .p-medium, .p-small {
     background-color: var(--dark-gray);
 }
 
+.messenger-block-list__item img {
+    width: 34px;
+}
+
 /* advice-block */
 .advice-block, .speaker-block, .info-block,
 .master-class
