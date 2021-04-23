@@ -25,10 +25,12 @@ ul {
 
 h1  {
     font-size: 36px;
+    font-weight: 900;
 }
 
 h2  {
     font-size: 24px;
+    font-weight: 900;
 }
 
 h3  {
@@ -43,26 +45,109 @@ p {
     font-size: 14px;
 }
 
+h1, h2, h3, p, .p-small {
+    margin-bottom: 10px;
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+.text-light-gray {
+    color: var(--light-gray);
+}
+
+.text-dark-gray {
+    color: var(--dark-gray);
+}
+
 .container {
-    max-width: 414px;
+    max-width: 480px;
     min-width: 300px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
+
+/* main-content */
 .main-content {
     background-color: #2d393a;
 }
 
+.main-content__inner {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    height: inherit;
+    background: url('../images/main-bg.png') center top no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.main-content__text-block:not(:last-of-type) {
+    margin-bottom: 66px;
+}
+
+
 /* header */
 .header {
+    background-color: #2d393a;
+    padding: 8px 0;
+}
+
+.header__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 0;
 }
 
 .header__date {
     max-width: 90px;
     margin-top: 20px;
+}
+
+/* messenger-block */
+.messenger-block {
+    padding: 24px 16px 32px;
+    border-radius: 12px;
+    background-image: linear-gradient(12deg, #c3a882 0%, #f1e7ca 100%)
+}
+
+.messenger-block__text {
+    font-weight: 900;
+    width: calc(100% - 104px);
+}
+
+.messenger-block__header {
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.messenger-block__header img {
+    position: absolute;
+    top: -65px;
+    right: -2px;
+}
+
+.messenger-block-list {
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+}
+
+.messenger-block-list__item {
+    flex: 1 0 0;
+}
+
+.messenger-block-list__item a {
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.16);
+    background-color: var(--dark-gray);
 }
