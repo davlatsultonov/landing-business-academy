@@ -343,6 +343,7 @@ h1, h2, h3, p, .p-medium, .p-small {
     color: #fff;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 /* registration block */
@@ -400,6 +401,7 @@ h1, h2, h3, p, .p-medium, .p-small {
 }
 
 .registration-block-form__button {
+    cursor: pointer;
     padding-left: 8px;
     padding-right: 8px;
     margin-top: 16px;
