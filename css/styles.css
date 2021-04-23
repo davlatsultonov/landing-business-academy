@@ -381,7 +381,7 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 
 /* online show block */
 .online-show-block {
-    padding: 105px 50px 83px 105px;
+    padding: 86px 60px 83px 93px;
     min-height: 20px;
     position: relative;
     background: rgba(242, 209, 162, .15) url("../images/record-overlay.png") center 24px no-repeat;
@@ -390,7 +390,15 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 
 @media (min-width: 359px) {
     .online-show-block {
+        padding-top: 105px;
+        padding-left: 105px;
         background-size: unset;
+    }
+}
+
+@media (min-width: 370px) {
+    .online-show-block {
+        padding-right: 104px;
     }
 }
 
@@ -401,6 +409,16 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 
 .online-show-block h3 {
     line-height: 22px;
+}
+
+.online-show-block p {
+    font-size: 14px;
+}
+
+@media (min-width: 359px) {
+    .online-show-block p {
+        font-size: 16px;
+    }
 }
 
 /* master class */
