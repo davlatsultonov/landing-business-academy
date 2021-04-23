@@ -137,10 +137,11 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 .header__content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .header__date {
+    line-height: 16px;
     max-width: 90px;
     margin-bottom: 0;
 }
