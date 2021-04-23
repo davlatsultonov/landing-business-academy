@@ -80,7 +80,7 @@ h1, h2, p, .p-medium, .p-small {
 
 
 /* main-content */
-.main-content {
+.main-content, .video-block {
     background-color: #2d393a;
 }
 
@@ -149,6 +149,7 @@ h1, h2, p, .p-medium, .p-small {
 
 .messenger-block-list__item {
     flex: 1 0 0;
+    cursor: pointer;
 }
 
 .messenger-block-list__item a {
@@ -227,4 +228,21 @@ h1, h2, p, .p-medium, .p-small {
 
 .speaker-block-list__content {
     margin-top: 16px;
+}
+
+/* video-block */
+.video-block {
+}
+
+.video-block__inner {
+    background: url('../images/main-bg2.png') center top no-repeat;
+    background-size: cover;
+    padding-top: 139px;
+    padding-bottom: 15px;
+}
+
+.video-block__btn {
+    display: inline-block;
+    margin-bottom: 16px;
+    cursor: pointer;
 }
