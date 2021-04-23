@@ -151,3 +151,43 @@ h1, h2, h3, p, .p-small {
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.16);
     background-color: var(--dark-gray);
 }
+
+/* advice-block */
+.advice-block {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.advice-block__title {
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.advice-block-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.advice-block-list__item--right {
+    align-self: flex-end;
+}
+
+.advice-block-list__item:not(:last-of-type) {
+    margin-bottom: 60px;
+}
+
+.advice-block-list h2, .advice-block-list p {
+    color: var(--dark-gray);
+}
+
+.advice-block-item {
+    max-width: 240px;
+}
+
+.advice-block-list h2 {
+    margin-bottom: 17px;
+}
+
+.advice-block-item img {
+    margin-bottom: 14px;
+}
