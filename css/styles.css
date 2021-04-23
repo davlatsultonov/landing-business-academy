@@ -57,7 +57,7 @@ p {
     font-size: 14px;
 }
 
-h1, h2, p, .p-medium, .p-small {
+h1, h2, h3, p, .p-medium, .p-small {
     margin-bottom: 10px;
 }
 
@@ -281,4 +281,25 @@ h1, h2, p, .p-medium, .p-small {
     color: var(--dark-gray);
     max-width: 240px;
     margin-left: 88px;
+}
+
+/* online show block */
+.online-show-block {
+    padding: 115px 68px 83px 80px;
+    min-height: 20px;
+    position: relative;
+    background: rgba(242, 209, 162, .15) url("../images/record-overlay.png") center 24px no-repeat;
+}
+
+.online-show-block__inner {
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+.online-show-block h3 {
+    line-height: 22px;
+}
+
+.online-show-block p {
+    line-height: 24px;
 }
