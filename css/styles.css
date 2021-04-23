@@ -170,7 +170,9 @@ h1, h2, h3, p, .p-medium, .p-small {
 }
 
 /* advice-block */
-.advice-block, .speaker-block, .info-block {
+.advice-block, .speaker-block, .info-block,
+.master-class
+{
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -289,6 +291,13 @@ h1, h2, h3, p, .p-medium, .p-small {
     min-height: 20px;
     position: relative;
     background: rgba(242, 209, 162, .15) url("../images/record-overlay.png") center 24px no-repeat;
+    background-size: 280px;
+}
+
+@media (min-width: 359px) {
+    .online-show-block {
+        background-size: unset;
+    }
 }
 
 .online-show-block__inner {
@@ -302,4 +311,26 @@ h1, h2, h3, p, .p-medium, .p-small {
 
 .online-show-block p {
     line-height: 24px;
+}
+
+/* master class */
+.master-class {
+
+}
+
+.master-class img {
+    margin: 19px auto;
+}
+
+.master-class__btn {
+    max-width: 480px;
+    width: 100%;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #d9bb91;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
 }
