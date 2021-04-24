@@ -1,6 +1,7 @@
 :root {
     --light-gray: #faf2e6;
     --dark-gray: #6c7273;
+    --light-orange: #f2d1a2;
     --orange: #d9bb91;
 }
 
@@ -77,6 +78,10 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 
 .text-orange {
     color: var(--orange);
+}
+
+.text-light-orange {
+    color: var(--light-orange);
 }
 
 .text-light-gray {
@@ -162,13 +167,9 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 
 @media (min-width: 359px) {
     .messenger-block__text {
-        width: calc(100% - 104px);
-    }
-}
-
-@media (min-width: 359px) {
-    .messenger-block__text {
         font-size: 14px;
+        line-height: 18px;
+        width: calc(100% - 104px);
     }
 }
 
@@ -189,7 +190,7 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 @media (min-width: 359px) {
     .messenger-block__header img {
         width: auto;
-        top: -55px;
+        top: -47px;
     }
 }
 
@@ -199,6 +200,7 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
     display: flex;
     overflow: hidden;
     position: relative;
+    box-shadow: 0 8px 8px rgba(45, 57, 58, 0.16), 0 0 8px rgba(45, 57, 58, 0.08);
 }
 
 .messenger-block-list:after {
@@ -242,8 +244,8 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
     width: 100%;
     display: inline-flex;
     justify-content: center;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.16);
     background-color: var(--dark-gray);
 }
@@ -373,21 +375,17 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 }
 
 .info-block-item__number {
-    font-size: 72px;
-    font-weight: 100;
-    letter-spacing: -5px;
-    color: var(--orange);
+    margin-bottom: -23px;
 }
 
 .info-block-item__text {
     color: var(--dark-gray);
     max-width: 240px;
-    margin-left: 83px;
+    margin-left: 87px;
 }
 
 /* online show block */
 .online-show-block {
-    padding: 86px 60px 83px 93px;
     min-height: 20px;
     position: relative;
     background: rgba(242, 209, 162, .15) url("../images/record-overlay.png") center 24px no-repeat;
@@ -396,22 +394,25 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 
 @media (min-width: 359px) {
     .online-show-block {
-        padding-top: 105px;
-        padding-left: 105px;
         background-size: unset;
     }
 }
 
-@media (min-width: 370px) {
-    .online-show-block {
-        padding-right: 104px;
+.online-show-block__inner {
+    max-width: 230px;
+    padding: 88px 0 83px 64px;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 359px) {
+    .online-show-block__inner {
+        max-width: 270px;
+        padding-top: 100px;
+        padding-left: 81px
     }
 }
 
-.online-show-block__inner {
-    max-width: 220px;
-    margin: 0 auto;
-}
 
 .online-show-block h3 {
     line-height: 22px;
@@ -419,11 +420,13 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 
 .online-show-block p {
     font-size: 14px;
+    line-height: 20px;
 }
 
 @media (min-width: 359px) {
     .online-show-block p {
         font-size: 16px;
+        line-height: 24px;
     }
 }
 
@@ -483,7 +486,7 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 }
 
 .registration-block p {
-    line-height: 16px;
+    line-height: 18px;
     margin-bottom: 10px;
 }
 
