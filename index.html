@@ -159,7 +159,7 @@
 
 <div class="video-block">
     <div class="container video-block__inner">
-        <a href="#" class="video-block__btn">
+        <a href="javascript:void(0);" class="video-block__btn js--video-block__btn">
             <img src="./images/icons/video-btn-play.svg" alt="play-btn">
         </a>
         <h2 class="text-orange">
@@ -168,6 +168,9 @@
         <p>
             Длительность 2 минуты
         </p>
+    </div>
+    <div class="container video-block__video">
+        <iframe id="video" height="399" src="//www.youtube.com/embed/9B7te184ZpQ?rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
 </div>
 
@@ -245,6 +248,8 @@
         <form class="registration-block-form">
             <input class="phone-mask" type="tel" name="phone" autocomplete="on" placeholder="Введите ваш номер*"/>
             <input type="email" name="email" autocomplete="on" placeholder="Введите вашу почту*"/>
+
+            <div class="error">Введите номер телефона*</div>
             <button type="submit" class="registration-block-form__button">
                 зарегистрироваться бесплатно
             </button>

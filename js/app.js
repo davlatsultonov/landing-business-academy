@@ -1,4 +1,12 @@
 $(function () {
+    $('.js--video-block__btn').on('click', function(ev) {
+        ev.preventDefault();
+        setTimeout(() => {
+            $("#video")[0].src += "&autoplay=1";
+            $(this).closest('.video-block').addClass('video-block--active')
+        }, 800);
+    });
+
     let isValidMask = false;
 
     $('.phone-mask').mask('+7 (000) 000-00-00', {
