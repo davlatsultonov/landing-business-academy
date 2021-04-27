@@ -131,6 +131,10 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
     margin-bottom: 50px;
 }
 
+.main-content__text-block .p-small {
+    margin-bottom: 10px;
+}
+
 
 /* header */
 .header {
