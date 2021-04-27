@@ -114,7 +114,6 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
     padding-bottom: 48px;
     height: inherit;
     background: url('../images/main-bg.png') center top no-repeat;
-    background-size: contain;
     position: relative;
 }
 
@@ -129,7 +128,7 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 }
 
 .main-content__text-block:not(:last-of-type) {
-    margin-bottom: 66px;
+    margin-bottom: 50px;
 }
 
 
