@@ -199,7 +199,6 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 
 .messenger-block-list {
     width: 100%;
-    border-radius: 8px;
     display: flex;
     overflow: hidden;
     position: relative;
@@ -207,11 +206,10 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 }
 
 .messenger-block-list:after {
-    background: #fff;
+    background: rgba(255, 255, 255, .08);
     content: "";
     height: 9.6875rem;
     left: -4.6875rem;
-    opacity: 0.2;
     position: absolute;
     top: -50px;
     transform: rotate(
@@ -232,6 +230,16 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
     cursor: pointer;
     transition: opacity 200ms ease-in-out;
     will-change: opacity;
+}
+
+.messenger-block-list__item:first-child a {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.messenger-block-list__item:last-child a {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .messenger-block-list__item:active, .messenger-block-list__item:hover {
@@ -315,7 +323,7 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
     padding-bottom: 64px;
 }
 
-.speaker-block img {
+.speaker-block__img {
     margin: 20px auto 24px;
     box-shadow: 0 22px 12px -9px rgba(45, 57, 58, .16);
 }
@@ -332,7 +340,8 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 }
 
 .speaker-block-list__item:first-child {
-    border-top: 1px solid #f2d1a2;
+    padding-top: 0;
+    padding-bottom: 25px;
 }
 
 .speaker-block-list__item h3 {
@@ -407,8 +416,7 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 /* online show block */
 .online-show-block {
     min-height: 20px;
-    position: relative;
-    background: rgba(242, 209, 162, .15) url("../images/record-overlay.png") center 24px no-repeat;
+    background: rgba(242, 209, 162, .15) url("../images/icons/record-border.svg") center 24px no-repeat;
     background-size: 280px;
 }
 
@@ -422,6 +430,7 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
     max-width: 230px;
     padding: 88px 0 83px 64px;
     margin: 0 auto;
+    position: relative;
 }
 
 
@@ -431,6 +440,17 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
         padding-top: 100px;
         padding-left: 81px
     }
+}
+
+.online-show-block__record-icon {
+    position: absolute;
+    left: -6px;
+    top: 44px;
+    animation-timing-function: ease-in-out;
+    animation-name: record;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 
 
@@ -528,6 +548,7 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
     padding-right: 16px;
     background-color: transparent;
     color: #f5c889;
+    line-height: 26px;
 }
 
 .registration-block-form input::placeholder {
@@ -629,5 +650,15 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
     100% {
         left: 110%;
         margin-left: 80px;
+    }
+}
+
+@keyframes record {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
