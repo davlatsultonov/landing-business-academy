@@ -1,5 +1,7 @@
 $(function () {
-    AOS.init();
+    AOS.init({
+        once: true
+    });
 
     $('.js--video-block__btn').on('click', function(ev) {
         ev.preventDefault();

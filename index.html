@@ -220,7 +220,7 @@
 
 <div class="online-show-block">
     <div class="online-show-block__inner" >
-        <img class="online-show-block__record-icon" src="./images/icons/record-icon.svg" alt="">
+        <img class="online-show-block__record-icon" src="./images/icons/icon-REC.svg" alt="record-icon">
         <h3 class="text-dark-gray" data-aos="fade-down" data-aos-duration="550">А также вас ждёт реалити-шоу!</h3>
         <p class="text-dark-gray" data-aos="fade-up" data-aos-duration="600">
             Вы в режиме онлайн<br> увидите, как я за 20 минут<br> на ваших глазах с нуля<br> запущу рекламу, которая<br> уже на следующий день приведёт клиентов.
@@ -256,9 +256,15 @@
         </h2>
 
         <form class="registration-block-form">
-            <input data-aos="fade-up" data-aos-delay="200" class="phone-mask" type="tel" name="phone" autocomplete="on" placeholder="Введите ваш номер*"/>
-            <input data-aos="fade-up" data-aos-delay="200" type="email" name="email" autocomplete="on" placeholder="Введите вашу почту*"/>
-            <div class="error">Введите номер телефона*</div>
+            <div class="registration-block-form__label input-error" data-aos="fade-up" data-aos-delay="200" >
+                <input class="registration-block-form__input phone-mask" placeholder="Введите ваш номер*" type="tel" name="phone" />
+                <span class="registration-block-form__text">Введите ваш номер*</span>
+            </div>
+
+            <div class="registration-block-form__label" data-aos="fade-up" data-aos-delay="400" >
+                <input class="registration-block-form__input" type="email" placeholder="Введите вашу почту*" name="email" />
+                <span class="registration-block-form__text">Введите вашу почту*</span>
+            </div>
 
             <button type="submit" class="registration-block-form__button">
                 зарегистрироваться бесплатно
