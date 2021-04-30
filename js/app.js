@@ -1,6 +1,12 @@
 $(function () {
-    AOS.init({
-        once: true
+    AOS.init();
+
+    document.addEventListener('aos:in:speaker-image', ({ detail }) => {
+        console.log('animated in', detail);
+    });
+
+    document.addEventListener('aos:out:speaker-image', ({ detail }) => {
+        console.log('animated out', detail);
     });
 
     $('.js--video-block__btn').on('click', function(ev) {
