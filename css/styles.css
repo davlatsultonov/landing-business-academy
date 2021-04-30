@@ -12,6 +12,9 @@ html, body {
 body {
     font-family: 'SFPro', sans-serif;
     color: var(--light-gray);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
 }
 
 input {
@@ -397,13 +400,17 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 }
 
 .info-block-item__number {
-    margin-bottom: -23px;
+    font-size: 72px;
+    font-weight: 100;
+    line-height: 0.6;
+    letter-spacing: -5px;
+    color: var(--orange);
 }
 
 .info-block-item__text {
     color: var(--dark-gray);
     max-width: 240px;
-    margin-left: 87px;
+    margin-left: 83px;
 }
 
 /* online show block */
