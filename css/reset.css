@@ -48,7 +48,8 @@ main {
 
 hr {
   box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
+  height: 1px; /* 1 */
+  border: none;
   overflow: visible; /* 2 */
 }
 
