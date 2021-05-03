@@ -624,7 +624,7 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 .registration-block-form__input:focus + .registration-block-form__text {
     font-size: 12px;
     line-height: 12px;
-    top: 6px;
+    top: 8px;
 }
 
 .registration-block-form__text {
@@ -701,7 +701,6 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
     padding-top: 24px;
     padding-bottom: 16px;
     background-color: #002430;
-    min-height: 500px;
 }
 
 .footer__logo {
