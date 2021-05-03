@@ -422,9 +422,9 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 .info-block-item__number {
     font-size: 72px;
     font-weight: 100;
-    line-height: 0.6;
     letter-spacing: -5px;
-    color: var(--orange);
+    color: var(--dark-gray);
+    margin-bottom: -3px;
 }
 
 .info-block-item__text {
