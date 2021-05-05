@@ -12,8 +12,18 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
-    <link href="css/styles.css?v=2.3" rel="stylesheet">
+    <link href="css/styles.css?v=2.4" rel="stylesheet">
 
+    <script>
+        var isInstagram = navigator.userAgent.match(/instagram/i);
+        if (isInstagram) {
+            var head = document.querySelector('head');
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'css/insta-styles?v=2.4.css';
+            head.appendChild(link);
+        }
+    </script>
 </head>
 
 <body>
