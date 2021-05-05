@@ -345,12 +345,6 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
     max-width: 240px;
 }
 
-@media (min-width: 359px) {
-    .advice-block-item {
-        max-width: 260px;
-    }
-}
-
 .advice-block-list h2 {
     margin-bottom: 13px;
 }
