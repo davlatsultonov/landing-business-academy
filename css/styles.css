@@ -114,16 +114,18 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 
 
 /* main-content */
-.main-content {
+.main-content, .header {
     background-color: #2d393a;
 }
 
 .main-content__inner {
     padding-top: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 40px;
     height: inherit;
-    background: url('../images/main-bg.png') center top no-repeat;
+    background: url('../images/main-bg-big.jpg') no-repeat;
     position: relative;
+    background-size: contain;
+    background-position-y: -69px;
 }
 
 .main-content__inner h2 {
@@ -157,7 +159,6 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
 
 /* header */
 .header {
-    background-color: #333d40;
     padding: 8px 0;
 }
 
