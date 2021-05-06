@@ -478,18 +478,10 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
     margin-right: 8px;
 }
 
-@media (min-width: 480px) {
-    .club-resident {
-        text-align: center;
-    }
-
-    .club-resident__title, .club-resident__logo, .club-resident__paragraph {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .club-resident__title, .club-resident__link, .club-resident__paragraph {
-        --p-left: 0;
+@media (min-width: 360px) {
+    .club-resident__inner {
+        max-width: 328px;
+        margin: auto;
     }
 }
 
