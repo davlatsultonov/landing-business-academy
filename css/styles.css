@@ -118,14 +118,30 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
     background-color: #2d393a;
 }
 
-.main-content__inner {
-    padding-top: 48px;
-    padding-bottom: 40px;
-    height: inherit;
-    background: url('../images/main-bg-big.jpg') no-repeat;
+.main-content .container {
+    padding-left: 0;
+    padding-right: 0;
     position: relative;
+}
+
+.main-content__inner {
+    padding: 48px 15px 40px;
+    height: inherit;
+    position: relative;
+    z-index: 1;
+}
+
+.main-content__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:  url('../images/main-bg-big.jpg') no-repeat;
     background-size: contain;
     background-position-y: -69px;
+    opacity: .3;
+    z-index: 0;
 }
 
 .main-content__inner h2 {
@@ -180,6 +196,13 @@ h1, h2, h3, p:not(:last-of-type), .p-medium:not(:last-of-type), .p-small:not(:la
     padding-top: 22px;
     border-radius: 12px;
     background-color: #f2d1a2;
+}
+
+@media (min-width: 480px) {
+    .messenger-block {
+        max-width: 328px;
+        margin: auto;
+    }
 }
 
 .messenger-block__text {
